@@ -18,7 +18,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: #778492;
+  color: #927777;
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #5f6b77;
+  color: #775f5f;
   color: #2d844e;
 }
 
@@ -77,16 +77,16 @@ a.btn-cta-primary:hover, .btn-cta-primary:hover {
 }
 
 a.btn-cta-secondary, .btn-cta-secondary {
-  background: #479FC8;
-  border: 1px solid #479FC8;
+  background: #c84747;
+  border: 1px solid #c84747;
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
-  background: #3893bd;
-  border: 1px solid #3893bd;
+  background: #bd3838;
+  border: 1px solid #bd3838;
   color: #fff;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -112,8 +112,8 @@ a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):act
 }
 
 a.dotted-link {
-  border-bottom: 1px dotted #778492;
-  color: #778492;
+  border-bottom: 1px dotted #927777;
+  color: #927777;
 }
 
 a.dotted-link:hover {
@@ -125,7 +125,7 @@ a.dotted-link:hover {
 .header {
   padding: 30px 0;
   background: #f5f5f5;
-  border-top: 10px solid #778492;
+  border-top: 10px solid #927777;
 }
 
 .header .btn {
@@ -138,14 +138,14 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .name {
-  color: #49515a;
+  color: #5a4949;
   font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
 }
 
 .header .profile-content .desc {
-  color: #778492;
+  color: #927777;
   font-family: "Lato", arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -154,7 +154,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a {
-  background: #b0b7bf;
+  background: #bfb0b0;
   width: 36px;
   height: 36px;
   display: inline-block;
@@ -171,7 +171,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a:hover {
-  background: #778492;
+  background: #927777;
 }
 
 .header .profile-content .social a .svg-inline--fa {
@@ -197,7 +197,7 @@ a.dotted-link:hover {
 .section .heading {
   margin-top: 0;
   margin-bottom: 30px;
-  color: #545e69;
+  color: #695454;
   font-size: 24px;
 }
 
@@ -225,11 +225,11 @@ a.dotted-link:hover {
 }
 
 .latest .item .title a {
-  color: #778492;
+  color: #927777;
 }
 
 .latest .item .title a:hover {
-  color: #5f6b77;
+  color: #775f5f;
 }
 
 .latest .item .project-image:hover {
@@ -254,7 +254,7 @@ a.dotted-link:hover {
 
 .latest .featured .summary {
   margin-bottom: 30px;
-  color: #778492;
+  color: #927777;
 }
 
 .latest .featured img {
@@ -296,7 +296,7 @@ a.dotted-link:hover {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: #479FC8;
+  background-color: #c84747;
   -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
   -moz-transform: rotate(45deg) translate3d(0, 0, 0);
   -ms-transform: rotate(45deg) translate3d(0, 0, 0);
@@ -307,7 +307,7 @@ a.dotted-link:hover {
   content: '';
   position: absolute;
   bottom: -5px;
-  border-top: 5px solid #276582;
+  border-top: 5px solid #822727;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
 }
@@ -333,11 +333,11 @@ a.dotted-link:hover {
 }
 
 .projects .item .title a {
-  color: #778492;
+  color: #927777;
 }
 
 .projects .item .title a:hover {
-  color: #5f6b77;
+  color: #775f5f;
 }
 
 .video-wrapper {
@@ -430,7 +430,7 @@ a.dotted-link:hover {
 /* Info Section */
 .info .svg-inline--fa {
   margin-right: 15px;
-  color: #ccd1d6;
+  color: #d6cccc;
 }
 
 .info .svg-inline--fa.fa-envelope-o {
@@ -466,7 +466,7 @@ a.dotted-link:hover {
 }
 
 .skills .skillset .level-title .level-label {
-  color: #ccd1d6;
+  color: #d6cccc;
   font-size: 14px;
   font-weight: 400;
   font-family: "Lato", arial, sans-serif;
@@ -524,7 +524,7 @@ a.dotted-link:hover {
 }
 
 .testimonials .item .source .name {
-  color: #939ea9;
+  color: #a99393;
   font-weight: 600;
 }
 
@@ -555,7 +555,7 @@ a.dotted-link:hover {
 }
 
 .education .item .university .year {
-  color: #b0b7bf;
+  color: #bfb0b0;
   font-weight: 500;
 }
 
@@ -565,7 +565,7 @@ a.dotted-link:hover {
 }
 
 .languages .item .title {
-  color: #778492;
+  color: #927777;
 }
 
 .languages .item .level {
@@ -591,11 +591,11 @@ a.dotted-link:hover {
 }
 
 .blog .item .title a {
-  color: #778492;
+  color: #927777;
 }
 
 .blog .item .title a:hover {
-  color: #5f6b77;
+  color: #775f5f;
 }
 
 .blog .item p {
@@ -616,11 +616,11 @@ a.dotted-link:hover {
 }
 
 .list ul li a {
-  color: #778492;
+  color: #927777;
 }
 
 .list ul li a:hover {
-  color: #49515a;
+  color: #5a4949;
 }
 
 /* Credits */
@@ -635,15 +635,15 @@ a.dotted-link:hover {
 }
 
 .credits ul li a {
-  color: #778492;
+  color: #927777;
 }
 
 .credits ul li a .svg-inline--fa {
-  color: #b0b7bf;
+  color: #bfb0b0;
 }
 
 .credits ul li a:hover {
-  color: #49515a;
+  color: #5a4949;
 }
 
 .credits .btn {
@@ -652,19 +652,19 @@ a.dotted-link:hover {
 
 .aside .subheading {
   font-size: 18px;
-  color: #545e69;
+  color: #695454;
 }
 
 /* ======= Footer ======= */
 .footer {
-  background: #32383e;
+  background: #3e3232;
   color: #fff;
   padding: 10px 0;
 }
 
 .footer .copyright {
   line-height: 1.6;
-  color: #a1aab4;
+  color: #b4a1a1;
   font-size: 14px;
 }
 

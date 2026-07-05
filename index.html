@@ -1,377 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Arran Smedley Port Folio</title>
-    <!-- Meta -->
+    <title>Arran Smedley — Software Engineer &amp; Technical Designer</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arran Smedley Port Folio">
-    <meta name="author" content="Arran Smedley">    
-    <link rel="shortcut icon" href="favicon.png">  
-    
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-					
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
-    <!-- github activity css -->    
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="Arran Smedley — Software Engineer working across safety-critical RADAR systems, AAA game development, and test automation.">
+    <meta name="author" content="Arran Smedley">
+    <link rel="shortcut icon" href="favicon.png">
 
-</head> 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+    <!-- Icons (vendored) -->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 <body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container clearfix">                       
-            <img class="profile-image img-fluid float-left rounded-circle" src="assets/images/Profile.jpg" alt="profile image" />
-            <div class="profile-content float-left">
-                <h1 class="name">Arran Smedley</h1>
-                <h2 class="desc">Technical Designer / Software Developer</h2>   
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://twitter.com/Azzamond"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/arran-smedley/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="https://github.com/ArranSmedley"><i class="fab fa-github-alt"></i></a></li>    
-              
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary float-right" href="\assets\Resume\Resume.pdf" target="_blank"><i class="fas fa-paper-plane"></i>Resume</a>     
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-lg-8 col-12">
-                <section class="about section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Technical Designer with experience in mission scripting, game systems, and automation testing. A
-                            self-motivated and detail-oriented designer with a strong foundation in programming and technical
-                            implementation. I've worked across multiple AAA titles in the games industry, bringing missions and systems
-                            to life using Unreal Engine and Lua.</p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">                    
-                            <div class="item featured text-center">
-                                <div class="video-wrapper">
-                                    <iframe src="https://www.youtube.com/embed/4s3jVJaFrbM" 
-                                            title="Introducing Mindseye" 
-                                            frameborder="0" 
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                            allowfullscreen>
-                                    </iframe>
+
+    <!-- ===== NAV ===== -->
+    <nav class="nav">
+        <div class="wrap">
+            <a href="#home" class="nav-mark">
+                <span class="blip"></span> AS<span style="color:var(--text-mute)">/PORTFOLIO</span>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#connect">Connect</a>
+            </div>
+            <div class="nav-cta">
+                <a class="btn btn-ghost" href="assets/Resume/Resume.pdf" target="_blank" rel="noopener">
+                    <i class="fas fa-file-arrow-down"></i> CV
+                </a>
+                <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="home" data-nav-section>
+            <div class="wrap">
+                <div>
+                    <div class="hero-meta">
+                        <span>●</span> ARRAN SMEDLEY — SOFTWARE ENGINEER &nbsp;/&nbsp; STIRLING, UK
+                    </div>
+                    <h1>Systems that hold up <em>under pressure.</em></h1>
+                    <p class="lede">From RADAR software on the Eurofighter Typhoon to mission scripting on AAA open-world titles — I design, build and test the systems people rely on to work every time.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#experience"><i class="fas fa-satellite-dish"></i> View Experience</a>
+                        <a class="btn btn-ghost" href="https://uk.linkedin.com/in/arran-smedley" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> Connect on LinkedIn</a>
+                    </div>
+                    <div class="hero-coords mono">
+                        <div><span class="num">Leonardo</span><span class="label">Current post</span></div>
+                        <div><span class="num">5+ yrs</span><span class="label">In production</span></div>
+                        <div><span class="num">Games · Defense</span><span class="label">Sectors</span></div>
+                    </div>
+                </div>
+
+                <div class="radar" aria-hidden="true">
+                    <div class="radar-ring"></div>
+                    <div class="radar-ring r2"></div>
+                    <div class="radar-ring r3"></div>
+                    <div class="radar-ring r4"></div>
+                    <div class="radar-cross"></div>
+                    <div class="radar-sweep"></div>
+                    <div class="radar-center"></div>
+                    <div class="radar-blip" style="top:22%; left:64%; animation-delay:0.2s;"></div>
+                    <div class="radar-blip" style="top:68%; left:30%; animation-delay:1.1s;"></div>
+                    <div class="radar-blip" style="top:38%; left:20%; animation-delay:2s;"></div>
+                    <div class="radar-label" style="top:2%; left:50%; transform:translateX(-50%);">000°</div>
+                    <div class="radar-label" style="bottom:2%; left:50%; transform:translateX(-50%);">180°</div>
+                    <div class="radar-label" style="top:50%; left:2%; transform:translateY(-50%);">270°</div>
+                    <div class="radar-label" style="top:50%; right:0%; transform:translateY(-50%);">090°</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
+        <section class="section" id="about" data-nav-section>
+            <div class="wrap">
+                <div class="eyebrow reveal"><span class="idx">01</span>&nbsp; About</div>
+                <div class="about-grid">
+                    <div class="about-copy reveal">
+                        <p>I'm a technically-focused software engineer with a foundation that runs through both ends of the industry: safety-critical defence systems and AAA game production. At Leonardo I work on RADAR software for the Eurofighter Typhoon, and at Build A Rocket Boy I spent three years scripting missions and multiplayer systems for two large-scale Unreal Engine titles.</p>
+                        <p>What ties it together is a habit of building things that get tested properly — automated pipelines, CI integration, and a Test-Driven mindset — whether the output is a mission players will replay or a system that has to be right the first time.</p>
+                    </div>
+                    <div class="stat-plate reveal">
+                        <div class="cell"><span class="num">5+</span><span class="label">Years in production</span></div>
+                        <div class="cell"><span class="num">2</span><span class="label">AAA titles shipped</span></div>
+                        <div class="cell"><span class="num">3</span><span class="label">Sectors: games, defence, fintech</span></div>
+                        <div class="cell"><span class="num">6</span><span class="label">Languages in daily use</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EXPERIENCE ===== -->
+        <section class="section" id="experience" data-nav-section>
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow reveal"><span class="idx">02</span>&nbsp; Experience</div>
+                        <h2>Career log</h2>
+                    </div>
+                    <span class="tag">2019 — Present</span>
+                </div>
+
+                <div class="timeline">
+                    <div class="tl-item is-current reveal">
+                        <div class="tl-time">DEC 2025 — PRESENT <span class="status">ACTIVE</span></div>
+                        <h3>Software Engineer</h3>
+                        <span class="org">Leonardo — Edinburgh</span>
+                        <ul>
+                            <li>Contribute to the development and maintenance of RADAR systems software for the Eurofighter Typhoon using Ada and C++, supporting high-reliability, safety-critical functionality.</li>
+                            <li>Design, develop and maintain automated test frameworks and scripts in Python, integrating Jenkins-based pipelines to validate system behaviour and support continuous integration testing.</li>
+                            <li>Collaborate closely with cross-functional engineering teams to keep development, testing and delivery aligned across safety-critical software components.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag-chip">Ada</span><span class="tag-chip">C++</span><span class="tag-chip">Python</span><span class="tag-chip">Jenkins</span><span class="tag-chip">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal">
+                        <div class="tl-time">DEC 2022 — DEC 2025</div>
+                        <h3>Technical Designer</h3>
+                        <span class="org">Build A Rocket Boy — Edinburgh</span>
+                        <ul>
+                            <li>Designed and implemented missions, gameplay systems and multiplayer features for two large-scale projects — <strong>Everywhere</strong> and <strong>Mindseye</strong> — using Unreal Engine, C++ and Lua.</li>
+                            <li>Built and maintained mission testing workflows covering stability, progression flow and multiplayer reliability across both projects.</li>
+                            <li>Contributed to multiplayer implementation with attention to server/client architecture, replication, synchronisation and responsive networked gameplay.</li>
+                            <li>Worked directly with executives, creative leads, designers and engineers to prototype features aimed at long-term player engagement.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag-chip">Unreal Engine</span><span class="tag-chip">C++</span><span class="tag-chip">Lua</span><span class="tag-chip">Multiplayer</span>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal">
+                        <div class="tl-time">MAY 2021 — DEC 2022</div>
+                        <h3>Software Tester</h3>
+                        <span class="org">The Shopworks — Edinburgh</span>
+                        <ul>
+                            <li>Built and maintained automated testing pipelines using Testim, Selenium, Node.js and Python, integrated with GitLab CI/CD to improve regression coverage and release reliability.</li>
+                            <li>Developed Python, Pandas and SQL scripts supporting analytics dashboards, automated reporting and data validation for internal teams.</li>
+                            <li>Took part in Agile ceremonies — sprint planning, stand-ups and retrospectives — across multiple teams supporting continuous delivery.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag-chip">Selenium</span><span class="tag-chip">Testim</span><span class="tag-chip">Python</span><span class="tag-chip">SQL</span><span class="tag-chip">GitLab CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal">
+                        <div class="tl-time">JUN 2020 — SEP 2020</div>
+                        <h3>Software Engineer Intern</h3>
+                        <span class="org">Calnex Solutions — Linlithgow</span>
+                        <ul>
+                            <li>Created Python-based scripts for network testing using internal APIs and the Delphi IDE.</li>
+                            <li>Conducted automated regression tests for telecom tools; worked within a Scrum team on rapid iteration cycles.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag-chip">Python</span><span class="tag-chip">Delphi</span><span class="tag-chip">Scrum</span>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal">
+                        <div class="tl-time">JUN 2019 — SEP 2019</div>
+                        <h3>Software Engineer Intern</h3>
+                        <span class="org">Viavi Solutions — Newbury</span>
+                        <ul>
+                            <li>Contributed to secure geo-location data workflows using C#.</li>
+                            <li>Collaborated with QA and development to resolve high-priority bugs and automate test cases.</li>
+                        </ul>
+                        <div class="tag-row">
+                            <span class="tag-chip">C#</span><span class="tag-chip">QA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="section" id="projects" data-nav-section>
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow reveal"><span class="idx">03</span>&nbsp; Projects</div>
+                        <h2>Featured work</h2>
+                    </div>
+                    <span class="tag">Unreal Engine · C++ · Lua</span>
+                </div>
+
+                <div class="project-featured reveal">
+                    <div class="project-figure">
+                        <span class="frame-tag">Mindseye</span>
+                        <img src="assets/images/projects/RMZPart2.PNG" alt="A Vital Extraction mission from Mindseye">
+                    </div>
+                    <div class="project-copy">
+                        <div class="tag-row"><span class="tag-chip">Unreal Engine 5</span><span class="tag-chip">Lua</span><span class="tag-chip">Mission Scripting</span></div>
+                        <h3>Mindseye</h3>
+                        <p>An episodic action-adventure blending cinematic storytelling with explosive gameplay. As Technical Designer I worked across multiple missions from prototyping through polish — scripting mission logic, tuning AI behaviours, and debugging alongside designers, artists and programmers to hit our quality bar. "A Vital Extraction," a high-speed chase through a scripted urban pursuit, was the standout mission I owned end to end.</p>
+                        <a class="more-link" href="https://www.mindseye.game" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Available on PC, PS5 &amp; Xbox</a>
+                    </div>
+                </div>
+
+                <div class="project-featured reveal">
+                    <div class="project-figure">
+                        <span class="frame-tag">Everywhere</span>
+                        <img src="assets/images/projects/everywhere.jpg" alt="Everywhere open-world title">
+                    </div>
+                    <div class="project-copy">
+                        <div class="tag-row"><span class="tag-chip">Unreal Engine</span><span class="tag-chip">Onboarding</span><span class="tag-chip">Sandbox Systems</span></div>
+                        <h3>Everywhere</h3>
+                        <p>An AAA open-world title, currently in Alpha. My focus was the game's introductory missions — the onboarding sequence that teaches new players core mechanics and systems. Getting that first hour right meant carefully pacing controls, objectives and sandbox elements to set the tone for everything that follows.</p>
+                        <a class="more-link" href="https://arran-d-smedley.itch.io/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> More on itch.io</a>
+                    </div>
+                </div>
+
+                <div class="section-head reveal" style="margin-bottom: 30px;">
+                    <h2 style="font-size: 22px;">Other builds</h2>
+                </div>
+                <div class="project-grid reveal">
+                    <div class="project-card">
+                        <div class="thumb"><img src="assets/images/projects/project1.png" alt="Fantasy & Ash"></div>
+                        <div class="body">
+                            <h4>Fantasy &amp; Ash</h4>
+                            <p>A C++ / SFML action RPG built in my third year at university — reincarnation, quests and combat set in the land of Kyntera.</p>
+                            <a class="more-link" href="https://arran-d-smedley.itch.io/fantasy-ash" target="_blank" rel="noopener">Play on itch.io →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="thumb"><img src="assets/images/projects/project2.png" alt="Prisoner Of War"></div>
+                        <div class="body">
+                            <h4>Prisoner Of War</h4>
+                            <p>A top-down WWII prison-escape game written in C# and MonoGame — graded A for my college capstone unit.</p>
+                            <a class="more-link" href="https://arran-d-smedley.itch.io/prisoner-of-war" target="_blank" rel="noopener">Play on itch.io →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="thumb"><img src="assets/images/projects/main1.png" alt="User Interface Project"></div>
+                        <div class="body">
+                            <h4>UI Systems Project</h4>
+                            <p>An advanced games-engineering artefact covering Meta, Spatial and Diegetic UI, including an A* pathfinder for the spatial layer.</p>
+                            <a class="more-link" href="https://arran-d-smedley.itch.io/user-interface-project" target="_blank" rel="noopener">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SKILLS ===== -->
+        <section class="section" id="skills" data-nav-section>
+            <div class="wrap">
+                <div class="eyebrow reveal"><span class="idx">04</span>&nbsp; Skills</div>
+                <h2 style="margin-bottom: 50px;">Toolkit</h2>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <div class="eyebrow" style="color:var(--text)"><span class="idx" style="color:var(--amber)">—</span> Languages &amp; Scripting</div>
+                        <div class="skill-tags">
+                            <span class="tag-chip">Python</span><span class="tag-chip">C++</span><span class="tag-chip">C#</span><span class="tag-chip">Lua</span><span class="tag-chip">SQL</span><span class="tag-chip">C</span><span class="tag-chip">HTML</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <div class="eyebrow" style="color:var(--text)"><span class="idx" style="color:var(--amber)">—</span> Testing &amp; QA</div>
+                        <div class="skill-tags">
+                            <span class="tag-chip">Selenium</span><span class="tag-chip">Testim</span><span class="tag-chip">Jenkins</span><span class="tag-chip">GitLab CI/CD</span><span class="tag-chip">JIRA</span><span class="tag-chip">Confluence</span><span class="tag-chip">Regression Testing</span><span class="tag-chip">API Testing</span><span class="tag-chip">Unit Testing</span><span class="tag-chip">Network Testing</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <div class="eyebrow" style="color:var(--text)"><span class="idx" style="color:var(--amber)">—</span> Tools &amp; Systems</div>
+                        <div class="skill-tags">
+                            <span class="tag-chip">Unreal Engine</span><span class="tag-chip">Unity</span><span class="tag-chip">MonoGame</span><span class="tag-chip">Linux / Unix</span><span class="tag-chip">Delphi</span><span class="tag-chip">Git</span><span class="tag-chip">GitHub</span><span class="tag-chip">OpenGL</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <div class="eyebrow" style="color:var(--text)"><span class="idx" style="color:var(--amber)">—</span> Methodologies</div>
+                        <div class="skill-tags">
+                            <span class="tag-chip">Agile</span><span class="tag-chip">Scrum</span><span class="tag-chip">Test-Driven Development</span><span class="tag-chip">Version Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== EDUCATION ===== -->
+        <section class="section" id="education" data-nav-section>
+            <div class="wrap">
+                <div class="eyebrow reveal"><span class="idx">05</span>&nbsp; Education</div>
+                <h2 style="margin-bottom: 50px;">Background</h2>
+                <div class="edu-list">
+                    <div class="edu-card reveal">
+                        <h3>BSc (Hons) Games Development</h3>
+                        <span class="org">Edinburgh Napier University · 2018 – 2021</span>
+                        <p>Key modules: C#, C++, SQL, Unity, AI Systems, Physics-Based Animation. Dissertation: <em>Procedural Generation in Game Environments</em> — graded 2:1.</p>
+                    </div>
+                    <div class="edu-card reveal">
+                        <h3>HNC Games Development</h3>
+                        <span class="org">Edinburgh College · 2017 – 2018</span>
+                        <p>Covered object-oriented programming, databases, project management and animation pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONNECT / LINKEDIN PLATE ===== -->
+        <section class="section" id="connect" data-nav-section>
+            <div class="wrap">
+                <div class="eyebrow reveal"><span class="idx">06</span>&nbsp; Connect</div>
+                <h2 style="margin-bottom: 50px;">Let's talk</h2>
+
+                <div class="connect-grid">
+                    <div class="plate reveal">
+                        <div class="plate-inner">
+                            <div class="plate-rivet br"></div>
+                            <div class="plate-rivet bl"></div>
+                            <div class="plate-eyebrow">Identification Plate // 001</div>
+                            <div class="plate-id">
+                                <img src="assets/images/Profile.jpg" alt="Arran Smedley">
+                                <div>
+                                    <h3>Arran Smedley</h3>
+                                    <span class="role">Software Engineer · Ex-AAA Technical Designer</span>
                                 </div>
-                                <h3 class="title mb-3"><a href="https://www.mindseye.game" target="_blank">Mindseye</a></h3>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p>Mindseye is an episodic action-adventure game blending cinematic storytelling with explosive gameplay, developed using Unreal Engine 5 and Lua at Build A Rocket Boy.
-                                        As a Technical Designer, I worked across multiple missions from early prototyping through to polish, contributing to gameplay systems, scripting, and level logic. 
-                                        My role focused on bridging design and engineering, ensuring that mission flow, AI behaviours, and in-game events all aligned with the narrative intent and player experience.
-                                        I collaborated closely with designers, artists, and programmers to implement mission logic, debug scripting issues, and ensure each mission hit our quality bar. Below are some highlights of the missions I contributed to.</p>
-                                </div><!--//desc-->
-                                <figure>
-                                    <img src="assets/images/projects/RMZPart2.PNG" alt="Trulli" style="width:100%">
-                                    <figcaption><em>A Vital Extraction</em><br>
-                                        One of the final missions in the game and personally my favourite to work on, A Vital Extraction delivers a high-stakes, high-speed chase through a cinematic urban landscape. 
-                                        I was responsible for designing and scripting the entire escape route, orchestrating car and drone pursuers to create a relentless sense of pressure. 
-                                        This mission stands out as one of the most action-packed sequences in the game, blending tight pacing, dynamic threats, and explosive set-pieces to push the player’s driving skills to the limit.
-                                    </figcaption>
-                                </figure>  
-                                <figure>
-                                    <img src="assets/images/projects/SaveSilva.PNG" alt="Trulli" style="width:100%">
-                                    <figcaption><em>Oh Lily!</em><br>
-                                        A standout mission in Mindseye, Oh Lily! takes the player through a series of escalating encounters, culminating in the game’s only boss fight. 
-                                        I was responsible for designing and scripting all major gameplay moments—from carefully tuned enemy placements to intense combat sequences. 
-                                        The mission features a dramatic mid-point where the player’s vehicle is destroyed in a scripted event, forcing a change in gameplay style. 
-                                        With support from friendly drones and a cinematic climax, this mission showcases a blend of pacing, spectacle, and technical design that makes it one of the most memorable experiences in the game.
-                                    </figcaption>
-                                </figure>
-                                <figure>
-                                    <img src="assets/images/projects/FMS.PNG" alt="Trulli" style="width:100%">
-                                    <figcaption><em>Seeking Doctor Morrison</em><br>
-                                        In Seeking Doctor Morrison, the player is on a tense search for a hidden underground silo—but it’s far from a quiet journey. 
-                                        I designed and scripted a dynamic series of drone ambushes that escalate in intensity, creating a constant sense of action while subtly guiding the player toward the objective. 
-                                        The encounter pacing was carefully tuned to keep players engaged and on edge, using enemy positioning and timing to shape both challenge and direction. 
-                                        This mission balances environmental storytelling with tightly controlled combat scenarios, making it a key moment of tension and discovery in the game.
-                                    </figcaption>
-                                </figure>     
-                                <a class="btn btn-cta-secondary" href="https://www.mindseye.game" target="_blank"><i class="fas fa-thumbs-up"></i>Available on PC, PS5 and Xbox</a>                 
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/everywhere.jpg" alt="Fantasy & Ash" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="" target="_blank">EVERYWHERE</a></h3>
-                                    <p class="mb-2">At Build A Rocket Boy, I worked on the AAA open-world title Everywhere, which has reached its Alpha stage but has not yet been fully released. My primary role was designing and scripting the game’s introductory missions, which teach new players the core mechanics and systems. This involved crafting a smooth and engaging onboarding experience that introduces controls, objectives, and sandbox elements in a clear and intuitive way. These early missions were key to setting the tone for player engagement and ensuring a strong first impression of the game world.</p>
-                                    <p><a class="more-link" href="" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://arran-d-smedley.itch.io/user-interface-project" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/main1.png" alt="Fantasy & Ash" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://arran-d-smedley.itch.io/user-interface-project" target="_blank">User Interface Project (Advanced Games Engineering)</a></h3>
-                                    <p class="mb-2">The purpose of this project was to create and produce a game artefact in which uses advanced games engineering techniques. This artefact can be anything related to games engineering so long as it met a certain criteria of requirements. By the knowledge I have gained throughout my time at university I created an efficient game User Interface in which uses the 3 different aspects within the game User Interface sector, these consist of Meta, Spatial and Diegetic. With also the addition of an A* pathfinder to represnt parts of the spatial UI. The documentation to this project can also be found in the project downloads folder. </p>
-                                    <p><a class="more-link" href="https://arran-d-smedley.itch.io/user-interface-project" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://arran-d-smedley.itch.io/fantasy-ash" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project1.png" alt="Fantasy & Ash" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://arran-d-smedley.itch.io/fantasy-ash" target="_blank">Fantasy & Ash (Games Engineering Project)</a></h3>
-                                    <p class="mb-2">Fantasy & Ash is a game I developed in my 3rd Year of Univeristy, written in C++ and SFML. Set in the land of Kyntera, Andrel, a high-level member of a local adventurer’s guild is killed on a routine quest under suspicious circumstances. He awakens to find that they have been reborn as a level 1 adventurer, with only a note from the kingdom explaining his situation and a sword. He must work his way back to his previous position by completing quests and hunting monsters, all while trying to uncover what happened. By fighting orc's and skeleton's Andrel and his party will atain experience aswell as gold in order to pay their way back into the kingdom. </p>
-                                    <p><a class="more-link" href="https://arran-d-smedley.itch.io/fantasy-ash" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://arran-d-smedley.itch.io/prisoner-of-war" target="_blank">
-                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/project2.png" alt="Prisoner Of War" />
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://arran-d-smedley.itch.io/prisoner-of-war" target="_blank">Prisoner Of War</a></h3>
-                                    <p class="mb-2">Prisoner Of War is a game I developed in late 2018 for my college graded Unit in which i recieved an A for, the game was written in C# and monogame. Set in the thick of world war two, Lieutenant George Andrews has been captured and held prisoner by the Germans, due to high volumes in the prisoner camps the Lieutenant has been sent to the Jewish camps to face the horrors alone. In this top down prison escape, you will be faced with challenges such as sneaking passed guards, picking up letters which in turn give ideas to find tools in order to escape the prison.</p>
-                                    <p><a class="more-link" href="https://arran-d-smedley.itch.io/prisoner-of-war" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                
-                </section><!--//section-->
-                
-                <section class="projects section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Other Projects</h2>
-                        <div class="content">
-							<div class="item">
-                                <h3 class="title">Dissertation - <span class="place"><a href="\assets\dissertation\40406581_Arran_Smedley.pdf" download="Dissertation">Click here to download</a></span></h3>
-                                <p>The aim of this project was to produce and compare three procedural map generation 
-								   algorithms for a two-dimensional dungeon roguelike game. In turn, deriving 
-								   assumptions from these algorithms which in turn can be used to produce detailed 
-								   comparisons of performance.
-								   The outcome was a successful prototype that had three different map generation 
-								   algorithms consisting of Cellular Automata, Perlin Noise and Delaunay Triangulation with the <strong>paper being graded a 2:1.</strong></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Github - <span class="place"><a href="https://github.com/ArranSmedley?tab=repositories" target="_blank">Click here</a></span></h3>
-                                <p>At my github all my other project can be seen. Most projects have been completed throughout univeristy and college but some are personal project in which I am still working on.</p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Itch.io - <span class="place"><a href="https://arran-d-smedley.itch.io/" target="_blank">Click here</a></span></h3>
-							</div><!--//item-->
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-                <section class="experience section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Technical Designer - <span class="place"><a href="https://www.buildarocketboy.com/">Build a Rocket Boy</a></span> <span class="year">(December 2022 - Current)</span></h3>
-                                <p> - Promoted from Associate to Technical Designer in May 2023<br>
-                                    - Designed and implemented missions and gameplay systems for two largescale projects: <b>Everywhere</b> and <b>Mindseye</b>.<br>
-                                    - Used <b>Lua</b> scripting and <b>Unreal Engine</b> to create interactive mission content and systemic gameplay features.<br>
-                                    - Collaborated with cross-functional teams (design, code, art) to streamline development workflows.<br>
-                                    - Contributed to debugging, iteration tools, and internal mission scripting frameworks.
-                                </p>
-                            </div><!--//item-->
-							<div class="item">
-                                <h3 class="title">Software Tester - <span class="place"><a href="https://www.theshopworks.com/">The Shopworks</a></span> <span class="year">(May 2021 - December 2022)</span></h3>
-                                <p> - Built automated testing pipelines using Testim and <b>NodeJS</b>, integrated with <b>GitLab CI/CD</b>.<br>
-                                    - Developed <b>Python</b> and <b>SQL</b> scripts to support analytics dashboards and internal reporting.<br>
-                                    - Participated in <b>Agile</b> ceremonies, sprint planning, and QA reviews acrossmulti-team product releases.<br>
-                                </p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer Intern - <span class="place"><a href="https://www.calnexsol.com/en/">Calnex Solutions</a></span> <span class="year">(June 2020 - September 2020)</span></h3>
-                                <p> - Created <b>Python-based</b> scripts for network testing using internal APIs and the Delphi IDE. <br>
-                                    - Conducted automated ABB regression tests for telecom tools.<br>
-                                    - Worked within a Scrum team on rapid iteration cycles.<br>
-                                </p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer Intern - <span class="place"><a href="https://www.viavisolutions.com/en-us">Viavi Solutions</a></span> <span class="year">(June 2019 - September 2019)</span></h3>
-                                <p> - Contributed to secure geo-location data workflows using <b>C#</b>.<br>
-                                    - Collaborated with QA and development to resolve high-priority bugs and automate test cases.<br>
-                                    - Supported customer deliverables during project deadlines.<br>
-                                </p>
-                            </div><!--//item-->
-                           
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-               
-            </div><!--//primary-->
-            <div class="secondary col-lg-4 col-12">
-                 <aside class="info aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Edinburgh, Scotland</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">ArranSmedleyWork@gmail.com</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://arransmedley.github.io/</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            
-                            
-                            <div class="skillset">
-                               
-                            	<div class="item">
-                                    <h3 class="level-title">Unreal Engine <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Used across most of the projects i have contributed to"><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">LUA <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Used across most of the projects i have contributed to"><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                            
-                                <div class="item">
-                                    <h3 class="level-title">C# <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Having been using C# for 5 years for College/University mostly within games development for the monogame & Unity engine, I have a good expert knowledge on terminology and programming structure"><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="70%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">C++ <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Having been using C++ for 4 years for University for, game graphics and physics based animation, I have a fairly good knowledge on the terminology and programming structure "><i class="fas fa-info-circle"></i>Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Python <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Python has been my main programming language for the past few years on testing and data analysis tasks within the work environment mainly using the library Pandas"><i class="fas fa-info-circle"></i>Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">C<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I have developed a few small game applications in C such as snake and knots & crosses so have a base understanding"><i class="fas fa-info-circle"></i>Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-								
-                                <div class="item">
-                                    <h3 class="level-title">SQL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="After picking up a data analyst role in shopworks I gained a greater understanding in SQL specifically using SQL Workbench and Athena AWS"><i class="fas fa-info-circle"></i>Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
+                            </div>
+                            <p>Open to conversations across games, defence and fintech engineering. The fastest way to reach me is LinkedIn — feel free to connect or send a message directly.</p>
+                            <div class="plate-cta">
+                                <a class="btn btn-primary" href="https://uk.linkedin.com/in/arran-smedley" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> View LinkedIn Profile</a>
+                                <a class="btn btn-ghost" href="https://github.com/ArranSmedley" target="_blank" rel="noopener"><i class="fab fa-github-alt"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                				
-                <aside class="education aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc (Hons) Games Development</h3>
-                                <h4 class="university">Edinburgh Napier University <span class="year">(2018-2021)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap"></i> HnC Games Development</h3>
-                                <h4 class="university">Edinburgh College <span class="year">(2017-2018)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>French:</strong></span>
-                                    <span class="level">Elementary. National 5(C) <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i><i class="fas fa-star-half"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="Twitter">
-               
-                        <a class="twitter-timeline" href="https://twitter.com/Azzamond" data-tweet-limit="4" data-width="399" ></a>
-				<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                   
+                    <div class="contact-list reveal">
+                        <a href="https://uk.linkedin.com/in/arran-smedley" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i>
+                            <div><span class="k">LinkedIn</span><span class="v">uk.linkedin.com/in/arran-smedley</span></div>
+                        </a>
+                        <a href="mailto:arransmedleywork@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <div><span class="k">Email</span><span class="v">arransmedleywork@gmail.com</span></div>
+                        </a>
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div><span class="k">Phone</span><span class="v">[removed]</span></div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div><span class="k">Location</span><span class="v">Stirling, Scotland</span></div>
+                        </div>
+                        <a href="https://github.com/ArranSmedley" target="_blank" rel="noopener">
+                            <i class="fab fa-github-alt"></i>
+                            <div><span class="k">GitHub</span><span class="v">github.com/ArranSmedley</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-   
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>© <span id="year">2026</span> Arran Smedley. Built &amp; maintained on GitHub Pages.</p>
+            <div class="footer-socials">
+                <a href="https://uk.linkedin.com/in/arran-smedley" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ArranSmedley" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github-alt"></i></a>
+                <a href="mailto:arransmedleywork@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
-</html> 
-
+</html>

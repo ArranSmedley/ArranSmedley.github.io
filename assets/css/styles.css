@@ -317,67 +317,43 @@ p:last-child{ margin-bottom: 0; }
   color: var(--text-mute);
 }
 
-/* radar visual */
+/* mission-route visual (hero HUD) */
 .radar{
   position: relative;
   width: min(100%, 420px);
   aspect-ratio: 1;
   margin: 0 auto;
-  border-radius: 50%;
   justify-self: center;
 }
-.radar-ring{
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 1px solid var(--hairline-2);
+.radar svg{ overflow: visible; }
+.route-line{
+  stroke-dasharray: 7 7;
+  animation: dash-scroll 2.6s linear infinite;
 }
-.radar-ring.r2{ inset: 15%; }
-.radar-ring.r3{ inset: 30%; }
-.radar-ring.r4{ inset: 45%; }
-.radar-cross{
-  position: absolute; inset: 0;
+@keyframes dash-scroll{ to{ stroke-dashoffset: -28; } }
+.pin-num{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--text-dim);
 }
-.radar-cross::before, .radar-cross::after{
-  content: "";
-  position: absolute;
-  background: var(--hairline-2);
+.pin-pulse-ring{
+  transform-origin: center;
+  animation: pin-pulse 2.4s ease-out infinite;
 }
-.radar-cross::before{ left: 50%; top: 0; bottom: 0; width: 1px; }
-.radar-cross::after{ top: 50%; left: 0; right: 0; height: 1px; }
-.radar-sweep{
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, rgba(255,180,84,0.55), rgba(255,180,84,0) 28%);
-  animation: sweep 5s linear infinite;
-  mix-blend-mode: screen;
+@keyframes pin-pulse{
+  0%{ opacity: 0.55; transform: scale(1); }
+  100%{ opacity: 0; transform: scale(1.9); }
 }
-@keyframes sweep{ to{ transform: rotate(360deg); } }
-.radar-blip{
-  position: absolute;
-  width: 7px; height: 7px;
-  background: var(--teal);
-  border-radius: 50%;
-  box-shadow: 0 0 10px var(--teal);
+.poi-dot{
   animation: blip 3.2s ease-in-out infinite;
+  filter: drop-shadow(0 0 4px var(--teal));
 }
-@keyframes blip{ 0%,100%{ opacity: 0.25; } 50%{ opacity: 1; } }
-.radar-center{
-  position: absolute;
-  left: 50%; top: 50%;
-  width: 10px; height: 10px;
-  margin: -5px 0 0 -5px;
-  background: var(--amber);
-  border-radius: 50%;
-  box-shadow: 0 0 16px 4px rgba(255,180,84,0.5);
-}
-.radar-label{
-  position: absolute;
+@keyframes blip{ 0%,100%{ opacity: 0.2; } 50%{ opacity: 1; } }
+.corner-label{
   font-family: var(--font-mono);
   font-size: 10.5px;
   letter-spacing: 0.08em;
-  color: var(--text-mute);
+  fill: var(--text-mute);
   text-transform: uppercase;
 }
 

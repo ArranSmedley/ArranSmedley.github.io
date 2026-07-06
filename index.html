@@ -53,36 +53,64 @@
             <div class="wrap">
                 <div>
                     <div class="hero-meta">
-                        <span>●</span> ARRAN SMEDLEY — SOFTWARE ENGINEER &nbsp;/&nbsp; STIRLING, UK
+                        <span>●</span> ARRAN SMEDLEY — TECHNICAL DESIGNER &nbsp;/&nbsp; STIRLING, UK
                     </div>
-                    <h1>Systems that hold up <em>under pressure.</em></h1>
-                    <p class="lede">From RADAR software on the Eurofighter Typhoon to mission scripting on AAA open-world titles — I design, build and test the systems people rely on to work every time.</p>
+                    <h1>Missions worth <em>replaying.</em></h1>
+                    <p class="lede">AAA technical designer and software engineer specialising in mission scripting, multiplayer systems and the Unreal Engine toolchain — with automated testing built in from day one.</p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="#experience"><i class="fas fa-satellite-dish"></i> View Experience</a>
+                        <a class="btn btn-primary" href="#projects"><i class="fas fa-gamepad"></i> View Projects</a>
                         <a class="btn btn-ghost" href="https://uk.linkedin.com/in/arran-smedley" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i> Connect on LinkedIn</a>
                     </div>
                     <div class="hero-coords mono">
-                        <div><span class="num">Leonardo</span><span class="label">Current post</span></div>
+                        <div><span class="num">2</span><span class="label">AAA titles</span></div>
                         <div><span class="num">5+ yrs</span><span class="label">In production</span></div>
-                        <div><span class="num">Games · Defense</span><span class="label">Sectors</span></div>
+                        <div><span class="num">Unreal</span><span class="label">Core toolchain</span></div>
                     </div>
                 </div>
 
                 <div class="radar" aria-hidden="true">
-                    <div class="radar-ring"></div>
-                    <div class="radar-ring r2"></div>
-                    <div class="radar-ring r3"></div>
-                    <div class="radar-ring r4"></div>
-                    <div class="radar-cross"></div>
-                    <div class="radar-sweep"></div>
-                    <div class="radar-center"></div>
-                    <div class="radar-blip" style="top:22%; left:64%; animation-delay:0.2s;"></div>
-                    <div class="radar-blip" style="top:68%; left:30%; animation-delay:1.1s;"></div>
-                    <div class="radar-blip" style="top:38%; left:20%; animation-delay:2s;"></div>
-                    <div class="radar-label" style="top:2%; left:50%; transform:translateX(-50%);">000°</div>
-                    <div class="radar-label" style="bottom:2%; left:50%; transform:translateX(-50%);">180°</div>
-                    <div class="radar-label" style="top:50%; left:2%; transform:translateY(-50%);">270°</div>
-                    <div class="radar-label" style="top:50%; right:0%; transform:translateY(-50%);">090°</div>
+                    <svg viewBox="0 0 420 420" width="100%" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <pattern id="blockoutGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+                                <circle cx="1" cy="1" r="1" fill="var(--hairline-2)"></circle>
+                            </pattern>
+                        </defs>
+                        <rect x="20" y="20" width="380" height="380" rx="18" fill="url(#blockoutGrid)" stroke="var(--hairline-2)" stroke-width="1"></rect>
+
+                        <path id="missionRoute" class="route-line" d="M 80 320 C 120 220, 90 170, 160 140 S 260 190, 230 100" fill="none" stroke="var(--amber-dim)" stroke-width="2" stroke-linecap="round"></path>
+
+                        <!-- waypoints -->
+                        <g>
+                            <circle cx="80" cy="320" r="15" fill="var(--bg-panel)" stroke="var(--amber-dim)" stroke-width="1.5"></circle>
+                            <text x="80" y="325" text-anchor="middle" class="pin-num">01</text>
+                        </g>
+                        <g>
+                            <circle cx="160" cy="140" r="15" fill="var(--bg-panel)" stroke="var(--amber-dim)" stroke-width="1.5"></circle>
+                            <text x="160" y="145" text-anchor="middle" class="pin-num">02</text>
+                        </g>
+                        <g>
+                            <circle class="pin-pulse-ring" cx="230" cy="100" r="15" fill="none" stroke="var(--amber)"></circle>
+                            <circle cx="230" cy="100" r="15" fill="var(--bg-panel)" stroke="var(--amber)" stroke-width="1.5"></circle>
+                            <text x="230" y="105" text-anchor="middle" class="pin-num" fill="var(--amber)">03</text>
+                        </g>
+
+                        <!-- moving objective marker -->
+                        <polygon points="-6,-8 10,0 -6,8" fill="var(--teal)">
+                            <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+                                <mpath href="#missionRoute" xlink:href="#missionRoute"></mpath>
+                            </animateMotion>
+                        </polygon>
+
+                        <!-- ambient points of interest -->
+                        <circle class="poi-dot" cx="310" cy="230" r="3.5" fill="var(--teal)" style="animation-delay:0.4s"></circle>
+                        <circle class="poi-dot" cx="110" cy="90" r="3.5" fill="var(--teal)" style="animation-delay:1.4s"></circle>
+                        <circle class="poi-dot" cx="300" cy="330" r="3.5" fill="var(--teal)" style="animation-delay:2.2s"></circle>
+
+                        <text x="34" y="46" class="corner-label">LEVEL_04</text>
+                        <text x="386" y="46" text-anchor="end" class="corner-label">BLOCKOUT</text>
+                        <text x="34" y="386" class="corner-label">MISSION ROUTE</text>
+                        <text x="386" y="386" text-anchor="end" class="corner-label">OBJ 03/03</text>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -93,13 +121,13 @@
                 <div class="eyebrow reveal"><span class="idx">01</span>&nbsp; About</div>
                 <div class="about-grid">
                     <div class="about-copy reveal">
-                        <p>I'm a technically-focused software engineer with a foundation that runs through both ends of the industry: safety-critical defence systems and AAA game production. At Leonardo I work on RADAR software for the Eurofighter Typhoon, and at Build A Rocket Boy I spent three years scripting missions and multiplayer systems for two large-scale Unreal Engine titles.</p>
-                        <p>What ties it together is a habit of building things that get tested properly — automated pipelines, CI integration, and a Test-Driven mindset — whether the output is a mission players will replay or a system that has to be right the first time.</p>
+                        <p>I'm a technical designer and software engineer who spent three years at Build A Rocket Boy scripting missions and multiplayer systems for two large-scale Unreal Engine titles, <strong>Everywhere</strong> and <strong>Mindseye</strong> — everything from mission logic and AI behaviour to server/client replication and onboarding flow.</p>
+                        <p>What carries through all of it is a habit of building things that get tested properly — automated pipelines, CI integration, and a Test-Driven mindset — so a mission holds up the tenth time through, not just the first.</p>
                     </div>
                     <div class="stat-plate reveal">
                         <div class="cell"><span class="num">5+</span><span class="label">Years in production</span></div>
                         <div class="cell"><span class="num">2</span><span class="label">AAA titles shipped</span></div>
-                        <div class="cell"><span class="num">3</span><span class="label">Sectors: games, defence, fintech</span></div>
+                        <div class="cell"><span class="num">Unreal</span><span class="label">Core toolchain</span></div>
                         <div class="cell"><span class="num">6</span><span class="label">Languages in daily use</span></div>
                     </div>
                 </div>
@@ -349,6 +377,10 @@
                             <i class="fas fa-envelope"></i>
                             <div><span class="k">Email</span><span class="v">arransmedleywork@gmail.com</span></div>
                         </a>
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div><span class="k">Phone</span><span class="v">[removed]</span></div>
+                        </div>
                         <div class="row">
                             <i class="fas fa-map-marker-alt"></i>
                             <div><span class="k">Location</span><span class="v">Stirling, Scotland</span></div>
